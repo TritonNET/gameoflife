@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "x64-windows",
+      "displayName": "x64 Windows (VS)",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/out/build/x64-windows",
+      "cacheVariables": {
+        "CMAKE_GENERATOR_PLATFORM": "x64"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "x64-windows",
+      "configurePreset": "x64-windows"
+    }
+  ]
+}
